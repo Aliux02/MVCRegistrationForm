@@ -29,5 +29,7 @@ namespace MVCDemo.Models
         [Required (ErrorMessage = "Adresa ivesti privaloma")]
         public  string Address { get; set; }
 
+
+
     }
 }
