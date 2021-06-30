@@ -1,0 +1,31 @@
+﻿@model Registration
+
+@using (Html.BeginForm("PostRegistrationData", "Registration", FormMethod.Post))
+{
+<div class="form-group">
+    @Html.LabelFor(m => m.Age)
+    @Html.TextBoxFor(m => m.Age, new { @class = "form-control" })
+    @Html.ValidationMessageFor(m => m.Age)
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(m => m.Name)
+    @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+    @Html.ValidationMessageFor(m => m.Name)
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(m => m.Surname)
+    @Html.TextBoxFor(m => m.Surname, new { @class = "form-control" })
+    @Html.ValidationMessageFor(m => m.Surname)
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(m => m.Address)
+    @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+    @Html.ValidationMessageFor(m => m.Address)
+</div>
+    
+
+    <input type="submit" value="submit" class="btn btn-primary">
+}
