@@ -23,10 +23,10 @@ namespace MVCDemo.Models
         [DisplayName("Jusu Amžsius")]
         [Range(0, 100, ErrorMessage = "Iveskite sveika skaiciu tarp 0 ir 100")]
         [Required(ErrorMessage = "Amziu ivesti privaloma")]
-        public string Age { get; set; }
+        public int? Age { get; set; }
 
         [DisplayName("Jusu Adresas")]
-        [Required (ErrorMessage = "Adresa ivesti privaloma")]
+        [Required(ErrorMessage = "Adresa ivesti privaloma")]
         public  string Address { get; set; }
 
 
